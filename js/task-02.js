@@ -6,13 +6,13 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const listIngredients = document.querySelector('#ingredients')
-const productArray = []
+const listIngredients = document.querySelector('#ingredients');
+const productArray = [];
 ingredients.forEach(ingredient => {
-  const product = document.createElement('li')
-  product.classList.add('item')
-  product.textContent = ingredient
-  productArray.push(product)
-})
-listIngredients.append(...productArray)
+  const product = document.createElement('li');
+  product.classList.add('item');
+  product.textContent = ingredient;
+  productArray.push(product);
+});
+listIngredients.append(...productArray);
 

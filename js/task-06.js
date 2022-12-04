@@ -1,9 +1,9 @@
-const textInput = document.querySelector('#validation-input');
-console.log(textInput.dataset.length);
-textInput.addEventListener('blur', () => {
-    if (textInput.value.length !== Number(textInput.dataset.length)) {
-        textInput.classList.add(`invalid`);
+const textInputEl = document.querySelector('#validation-input');
+console.log(textInputEl.dataset.length);
+textInputEl.addEventListener('blur', () => {
+    if (textInputEl.value.length !== Number(textInputEl.dataset.length)) {
+        textInputEl.classList.add(`invalid`);
       } else {
-      textInput.classList.replace(`invalid`, `valid`);
+      textInputEl.classList.replace(`invalid`, `valid`);
     }
 });
